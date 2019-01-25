@@ -3,10 +3,10 @@ INCLUDE = .
 COMPILE = gcc
 .SUFFIXES:
 
-all: clean lex.yy.c y.tab.c y.tab.o main.o prueba
+all: clean lex.yy.c y.tab.c y.tab.o main.o analysis
 
-prueba: main.o y.tab.o semantic.o
-	$(COMPILE) -o prueba main.o y.tab.o semantic.o
+analysis: main.o y.tab.o semantic.o
+	$(COMPILE) -o analysis main.o y.tab.o semantic.o
 
 main.o: main.c
 	$(COMPILE) -c -o main.o main.c -I$(INCLUDE)
@@ -32,3 +32,4 @@ clean:
 	-rm -f y.tab.h
 	-rm -f lex.yy.c
 	-rm -f aux_file_*
+	-rm -f analysis
