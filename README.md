@@ -14,7 +14,7 @@ Especificación del lenguaje:
 Observar los distintos ejemplos proporcionados en la carpeta "programas"
 
 USO:
-- make ~ Genera el ejecutable "analize"
+- make ~ Genera el ejecutable "analysis"
 - ./analysis programas/<name_file> ~ Informa de los errores lexico, sintactico, semantico y crea "generated.c" (Codigo intermedio)
 - gcc generated.c ~ Compilar el codigo intermedio (Codigo C similar a emsamblador, para mayor simplicidad)
 - ./a.out ~ Ejecutar
